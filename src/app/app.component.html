@@ -3,7 +3,7 @@
     <li class="page-item" [appClass]="{ disabled: currentPage === 0 }">
       <a (click)="onPreviousClick()" class="page-link">Previous</a>
     </li>
-    <ng-container *ngFor="let image of images; let i = index">
+    <ng-container *appTimes="images.length; let i = index">
       <li
         class="page-item"
         *ngIf="checkPaginationView(i)"
