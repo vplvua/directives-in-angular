@@ -8,6 +8,7 @@ export class TimesDirective {
     private templateRef: TemplateRef<any>,
     private viewContainer: ViewContainerRef
   ) {}
+<<<<<<< HEAD
 
   @Input() set appTimes(count: number) {
     this.viewContainer.clear();
@@ -16,4 +17,6 @@ export class TimesDirective {
       this.viewContainer.createEmbeddedView(this.templateRef, {});
     }
   }
+=======
+>>>>>>> classApp_directive
 }
